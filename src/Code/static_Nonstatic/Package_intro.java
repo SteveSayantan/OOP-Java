@@ -32,7 +32,7 @@ public class Package_intro {
             Why main() is declared as static?
             ---------------------------------
 
-            - Whenever we run a Java program, main() has to be executed first, w/o main() the program itself can't run.
+            - Whenever we run a Java program, main() is executed first, w/o main() the program itself can't run.
 
             - Therefore, if main() is not declared as static, we have to create an instance of the parent class to access main(). As non-static properties or methods
                 can't be accessed without creating an object of that class.
@@ -44,7 +44,7 @@ public class Package_intro {
             # We can not access anything non-static inside a static method. As non-static methods or properties belong to an object,
                 therefore, accessing those without specifying the object in which they belong, like we do in case of static things, is not possible. 
 
-                In simple terms, in a static context, you don't have an instance, that's why you can't access a non-static member without explicitly mentioning an object reference.
+                In simple terms, in a static context, we don't have an instance, that's why we can't access a non-static member without explicitly mentioning an object reference.
 
                 But, the vice-versa is possible.
 

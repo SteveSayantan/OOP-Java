@@ -16,7 +16,6 @@ Objects are characterized by three essential properties: *state*, *identity*, an
 The dot operator links the name of the object with the name of an instance variable.
 Although commonly referred to as the dot operator, the formal specification for Java categorizes the . as a separator.
 
-Instance variables: 26:40
 
 ## New Keyword
 

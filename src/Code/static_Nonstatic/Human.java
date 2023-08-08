@@ -9,13 +9,22 @@ public class Human {
 
     static int population;      // Properties or methods not related to the object, but common to all the objects of that class, are declared as static. 
 
+    /* 
+        - Non-static properties are called instance variables.
+
+        - Static properties are called class variables.
+
+        - Using static variables results in memory optimization as we do not need to create multiple copies of that property in each object.
+
+        - We can also count the number of objects created by generating unique numbers e.g. population property in Human class 
+    */
     public Human(int years,String str,int money){
         this.age=years;
         this.name=str;
         this.salary=money;
         this.increment++;
 
-        Human.population++;     // As it is a static one, we have to use the classname. Use of 'this' is not recommended at all.
+        Human.population++;     // As it is a static one, we have to use the classname. Usage of 'this' is not recommended at all.
     }
 
     static void fun_static(){       // This does not depend on an object
