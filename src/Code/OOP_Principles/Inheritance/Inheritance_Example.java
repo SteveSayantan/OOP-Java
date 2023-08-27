@@ -8,7 +8,7 @@ package Code.OOP_Principles.Inheritance;
     When we want to create a child class from a base class, we need to initialize the parent class variables also.
 
     A child class can not access the private members of the parent class. Objects created directly from the parent class 
-    can not access child members.
+    can not access child class members.
 
      
 */

@@ -12,4 +12,10 @@ public class Square extends Shapes{
 
         System.out.println("It is trying to override static method");
     } 
+
+    /* 
+        Rules for Overriding:
+        --------------------
+        1. 
+     */
 }
