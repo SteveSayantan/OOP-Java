@@ -2,7 +2,7 @@ package Code;
 
 
 public class WrapperClass_and_Final {
-    public static void main(String[] args) {
+       public static void main(String[] args) {
         
         // Integer is the wrapper class for int, we can use those to create integers. This wrapper class has so many functions.
 
@@ -15,8 +15,9 @@ public class WrapperClass_and_Final {
 
 
         // 'final' keyword 
-        final int INCREMENT=2;      // Now, we can not modify this 'INCREMENT' variable. Such variables must be written in UPPERCASE entirely, initialized while declaring.
+        final int INCREMENT;      // Now, we can not modify this 'INCREMENT' variable. Such variables must be written in UPPERCASE entirely, initialized while declaring. Can't use without initialization.
         // INCREMENT =3 ;             // Gives error
+
 
             /* 
                 However, if the variable is of reference type, this behavior of 'final' is not observed. 
@@ -41,7 +42,7 @@ public class WrapperClass_and_Final {
 }
 
 class Example{
-    final int num=45;   // we can declare 'final' property in a class
+    final int num=45;   // we can declare 'final' property in a class, but it has to be initialized in the same line or through constructor
     String name;
 
     Example(String name){
