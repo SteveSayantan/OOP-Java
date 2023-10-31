@@ -40,5 +40,33 @@ public abstract class Abstract_Demo {
         System.out.println(luckyNumber);
     }
 
-    
+    /* 
+        Important:
+       -----------
+        We can override non-abstract method using abstract.
+         e.g.,
+
+         class P{
+
+            public void m1(){
+                
+            }
+         }
+
+         abstract class C extends P{
+
+            public abstract void m1();  // This overrides m1() in class P
+         }
+
+         class subC extends C{  // subC must override and implement m1(); It is not allowed to use parent method m1() in class P 
+
+            public void m1(){
+
+            }
+         }
+
+        The main advanteage of this approach is we can stop the availability of parent method implementation (i.e. m1) to the next level child
+         classes (i.e. subC) and force them to redefine their own implementation of that method.
+
+    */
 }

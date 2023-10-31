@@ -4,13 +4,15 @@ package Code.OOP_Principles.Polymorphism;
     Poly --> many
     Morphism --> ways to represent
 
-    It means act of representing same thing in different way.
+    It means act of representing same thing in different way i.e. one name but different forms.
 
     A language that does not support Polymorphism, is called Object-Basis Language. e.g. Ada
 
     A language that supports Polymorphism, is called Object-Oriented Language.
 
-    Polymorphism and overriding does not apply to instance variables.
+    Polymorphism and overriding are only applicable to methods, but not variables. Variable resolution is always handled by compiler based on ref. type irrespective of static/non-static nature.
+
+    The access modifier for the overridden method should be the same or better (in terms of liberty ) than that of the overriding method.
     
     Reference: https://youtu.be/MYzaDgNGmTg (Durga Java)
 
@@ -25,12 +27,14 @@ public class Polymorphism_Example {
         ----------------------
         
         1. Compile Time / Static Polymorphism / Early Binding : Achieved by method overloading i.e. functions with same name but different args .
-        e.g. creating multiple Constructors in a class i.e. Constructor Overloading.
+            e.g. creating multiple Constructors in a class i.e. Constructor Overloading.
 
             It is called 'Static Polymorphism' because which method has to be called is decided at compile time
         
-        2. Dynamic / Runtime Polymorphism / Late Binding : It is achieved by method overriding.
-                
+        2. Dynamic / Runtime Polymorphism / Late Binding : It is achieved by method overriding i.e. same method signature but different implementation in parent and
+            child class. 
+             
+        Child class can redefine a method (inherited from its super class) based on its requirement. It is called overriding.
         */       
         
         // Shapes has 'area()' method, which is overridden in Circle, Square
@@ -63,7 +67,8 @@ public class Polymorphism_Example {
             This is an example of Runtime Polymorphism.
         */
 
-        random.message();       // This can't be overridden either (i.e. not overrided)
+        //Since random is of type Shapes, this will execute message() defined in class Shapes (due to method hiding)
+        random.message();    // logs --> "This can't be overridden either" 
 
     }
 

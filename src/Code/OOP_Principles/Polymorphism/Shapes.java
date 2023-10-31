@@ -28,7 +28,7 @@ public class Shapes {
 
         sum(3, 4);      
 
-        // However, if sum(int a,int b) is present, then Java would call it, instead of calling sum(double a,int b) .
+        // However, had sum(int a,int b) been present, then Java would call it, instead of calling sum(double a,int b) .
 
     }
 

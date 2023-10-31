@@ -23,7 +23,7 @@ public class Inheritance_Example extends Box{
             If we don't call super(), in that case also, super will be called implicitly, which is known as implicit super(). Implicit super() will always call the default parent constructor i.e. 
             Box() in this case. 
             
-            But we already have two Box(...) constructors defined and therefore calling implicit super() will result in error if the parent class does not
+            But we already have two Box(...) constructors defined and therefore calling implicit super() will result in error as the parent class does not
             have a Box() constructor (with no args) defined.
             If the parent has a Box constructor (with no args) defined or does not have any constructor defined at all, it is fine for implicit super(). 
 
@@ -80,7 +80,9 @@ public class Inheritance_Example extends Box{
         /* 
             In the above example, the instance is of child class i.e. Inheritance_Example and the
             reference variable is of type Box (base class) . Due to this, we can only access the members defined in
-            the parent class .
+            the parent class ( and inherited by the child class). 
+            
+            The parent class has no idea about its child classes and their members. As a result, we can only use the inherited parent methods.
             
             Therefore, we can say it is the type of reference variable and not the type of object
             that determines which members can be accessed.
@@ -89,11 +91,11 @@ public class Inheritance_Example extends Box{
 
         // Inheritance_Example test= new Box(1, 2, 3);          // this gives error
         /* 
-            Here, we can access to variables that are in the ref type i.e. Inheritance_Example, e.g. weight .
+            Here, we can access the variables that are in the ref type i.e. Inheritance_Example, e.g. weight .
             This also means, we have to initialize those variables that belong to the child class i.e. Inheritance_Example .
 
             However, when the obj (we are trying to create), itself is of type parent class, in no way we can call the child class constructor
-            for initializing those variables.This is why error.
+            for initializing those variables.This is why it gives error.
             
         */
 

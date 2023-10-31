@@ -50,5 +50,7 @@ public interface Interface_Engine{
       For this reason, if two classes are totally separate from each other in terms of class hierarchy, they can still implement same interface.
       
       Using Interface adds extra overhead, so using it casually is not recommended in performace critical code.
+
+      Internally, Annotations are also interfaces
     */
 }

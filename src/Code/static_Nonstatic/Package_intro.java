@@ -1,15 +1,15 @@
 package Code.static_Nonstatic;
 
-import static Demo.Package_Example.message;
+import Demo.Package_Example;
 
 public class Package_intro {
     
 
     public static void main(String[] args) {
 
-        message();          // This method is located in Package_Example.java class which lies in a different dir (also different level). So we need an import statement. 
+        Package_Example.message();          // This method is located in Package_Example.java class which lies in a different package. So we need an import statement. 
 
-        Human steve= new Human(23, "Sayantan", 100); // Importing Human class. No import statement required as it is in the same dir (same level).
+        Human steve= new Human(23, "Sayantan", 100); // Importing Human class. No import statement required as it is in the same package.
         // steve.isLoyal;           // false  
         // steve.increment;         //1
         // Human.population         //1             We should use the classname to access or modify static variables

@@ -1,12 +1,14 @@
 package Code.Interface.Basics;
 
-import Code.access_modifiers.Interface_Brake;
+import Code.access_modifiers.Interface_Music;
 
-public class Car implements Interface_Brake,Interface_Engine {  // We can use implements keyword to inherit multiple interfaces
+public class Car implements Interface_Music,Interface_Engine {  // We can use implements keyword to inherit multiple interfaces
     int speedLimit=100;
+
+    // The class implementing the interface have to override each and every method received from the interface
     @Override
-    public void brake() {
-        System.out.println("Brake pressed, Slowing down Car");
+    public void pause() {
+        System.out.println("Pause the music");
         
     }
 
@@ -17,10 +19,11 @@ public class Car implements Interface_Brake,Interface_Engine {  // We can use im
     }
 
     @Override
-    public void start() {
+    public void start() {   // since, we have already overridden the start method, we can not do the same again (for the start() in Interface_Music)
         System.out.println("Starting Car");
         
     }
+    
 
     @Override
     public void stop() {

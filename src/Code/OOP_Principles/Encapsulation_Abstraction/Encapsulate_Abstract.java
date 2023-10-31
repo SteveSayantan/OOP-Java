@@ -4,7 +4,7 @@ public class Encapsulate_Abstract {
     /* 
     Encapsulation:
     --------------
-        It refers to the process of wrapping up the implementation of the data members and methods in a class.
+        It refers to the process of wrapping up the implementation of the data members and methods in a class. It talks about security.
 
     Abstraction:
     ------------
