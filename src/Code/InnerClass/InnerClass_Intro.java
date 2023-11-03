@@ -77,6 +77,9 @@ package Code.InnerClass;
      }
 
      The above code gives compile-time error.
+
+    The outer java classes can access inner class private or protected members. These access modifiers on the inner classes will only 
+     affect their visibility in classes derived from the outer class.
     
     Case 1: Accessing Inner class code from static area of Outer class
     --------------------------------------------------------------------
