@@ -14,6 +14,11 @@ public abstract class Abstract_Demo {
 
         'final' classes can't be inherited hence, abstract classes can't be final as they are meant to be inherited.
 
+        An abstract method can never be 'private'.
+        
+        An abstract method can be 'protected' . In that case, outside the current package, any class that inherits from the associated abstract class can't see that 'protected' method. Therefore,
+         any method of the child class trying to override it will be specific to the child class only, no override will take place.
+
         Still we can't use multiple inheritance.
 
      */

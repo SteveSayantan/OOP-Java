@@ -54,7 +54,7 @@ public class Bounded_Type_Parameter {
 
            }
 
-           class Test < T extends Runnable & Number >{ // Invalid, we can't extend more than one class simultaneously
+           class Test < T extends Thread & Number >{ // Invalid, we can't extend more than one class simultaneously
 
            }
     */ 

@@ -11,7 +11,7 @@ public class Generic_Methods {
 
             class Test{     // normal class
 
-                public  <T>void m1 (T ob){   // we can use this type parameter anywhere inside this method as per requirement.
+                public  <T>void m1 (T ob){   // we can use this type parameter anywhere inside this method as per requirement, e.g. in this case, it has been used as the type of the parameter 
                     ...
                 }
 

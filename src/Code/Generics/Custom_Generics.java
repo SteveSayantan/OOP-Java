@@ -37,7 +37,7 @@ public class Custom_Generics{
         dbl.show();     // The type of ob: java.lang.Double
         System.out.println(dbl.getOb());
 
-        
+
     }
 }
 
@@ -45,15 +45,15 @@ class Gen<T>{
 
     T ob;   // Based on our runtime requirement, T will be replaced with our provided type
 
-    public Gen(T ob) {  
+    Gen(T ob) {  
         this.ob = ob;
     }
 
-    public void show(){
+    void show(){
         System.out.println("The type of ob: "+ob.getClass().getName());
     }
 
-    public T getOb(){
+    T getOb(){
         return ob;
     }
 

@@ -40,7 +40,7 @@ public interface Interface_Engine{
 
     /* 
       In normal classes, to override some method present in the parent_class, the method should be present in both the parent and child
-      class. Otherwise, it will give compile time error. 
+      class. 
       
       In this way, to avail some method in the child class, the parent_class gets filled with such methods. This problem is solved by interfaces.
       

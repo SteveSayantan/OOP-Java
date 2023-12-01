@@ -1,6 +1,6 @@
 package Code.Interface.Basics;
 
-import Code.access_modifiers.Interface_Music;
+import Demo.Interface_Music;
 
 public class Car implements Interface_Music,Interface_Engine {  // We can use implements keyword to inherit multiple interfaces
     int speedLimit=100;

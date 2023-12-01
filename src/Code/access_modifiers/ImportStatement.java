@@ -50,7 +50,7 @@ public class ImportStatement {
         Accessing Subpackage Classes:
         ----------------------------
 
-         Whenever we are importing a java package, all classes and interfaces present in the package by default is available.
+         Whenever we are importing a java package, all classes and interfaces present in the package by default are available.
          But not subpackage classes. If we want to use subpackage class, we have to write import statement until subpackage level.
 
          Ex.

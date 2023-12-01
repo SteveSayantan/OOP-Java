@@ -49,9 +49,9 @@ public class Intro_to_Generics {
 
         Therefore, at the time of retrival, no type casting is required.
 
-        In the example stated above, 'ArrayList', at the rhs, is called the base class, 'String' is the parameter type.
+        In the example stated above, at the lhs, 'ArrayList' is called the base type, 'String' is the parameter type.
 
-        We can apply polymorphism to the base class like this,
+        We can apply polymorphism to the base type like this,
             List<String> a= new ArrayList<String>();
             Collection<String> c= new ArrayList<String>();
 

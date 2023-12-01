@@ -2,7 +2,7 @@ package Code.Generics;
 
 public class WildCard_Generics {
     
-    // complete rules for overriding in Polymorphism/Square.java
+  
 
     /* 
        1.  m1(ArrayList <String> l){
@@ -36,10 +36,9 @@ public class WildCard_Generics {
 
           -- X can be class or interface.
           -- If X is a class then we can call this method by passing ArrayList of either X type or its super classes.
-          -- If X is an interface then we can call this method by passing ArrayList of either X type or super class of interface X (e.g. Parent Interface of Z,Object class )
+          -- If X is an interface then we can call this method by passing ArrayList of either X type or super class of interface X (e.g. Parent Interface of X,Object class )
             
           -- Within the method, we can add null and objects of type X .
-          -- This type of method is suitable for read only operations.
 
         Important Usecases
         ------------------

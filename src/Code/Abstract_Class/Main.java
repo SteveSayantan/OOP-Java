@@ -14,7 +14,9 @@ public class Main {
         son.printLuckyNum();        // calling the normal method (overridden)
 
         Abstract_Demo daughter= new Abstract_SubClass();    // Abstract class ref variable can hold child class objects ( same rule as previous )
-        // daughter.onlyChild();                            // can not access child class methods
+
+        // daughter.onlyChild();                            // can not access child class-specific methods
+        daughter.partner("Harry");                     // but can use overridden methods of child class (Run-time Polymorphism)
 
         
     }

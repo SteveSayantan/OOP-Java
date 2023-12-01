@@ -19,7 +19,7 @@ public class Encapsulate_Abstract {
         Now, to achieve this, the developers have to create some class, methods etc. Therefore, the
         writing of the code (to be protected from outside world ) is encapsulation and this creates abstraction.  
     
-    Date Hiding:
+    Data Hiding:
     ------------
         Keeping data hidden (using private) to that it can not be accessed directly.
 

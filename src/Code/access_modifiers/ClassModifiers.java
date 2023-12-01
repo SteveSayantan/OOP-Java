@@ -12,7 +12,7 @@ public class ClassModifiers {
 
         The only applicable modifiers for top level classes are --> public,<default>, final, abstract,strictfop
 
-        The only applicable modifiers for top level classes are --> public,<default>, private,protected,static final, abstract,strictfop
+        The only applicable modifiers for inner classes are --> public,<default>, private,protected,static final, abstract,strictfop
 
         In old languages like C++, 
          public, private,protected,<default> these are known as access specifiers. The remaining ones are considered as access modifiers.
@@ -92,7 +92,7 @@ public class ClassModifiers {
 
             public static void main(String [] args){
 
-                x=772;
+                x=772;                      // reassigning x, as it is not final
                 System.out.println(x);      // 772 
             }
         }

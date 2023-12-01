@@ -1,4 +1,4 @@
-package Code.access_modifiers;
+package Demo;
 
 public interface Interface_Music {
     void start();
