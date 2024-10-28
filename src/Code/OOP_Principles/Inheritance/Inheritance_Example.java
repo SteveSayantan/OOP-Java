@@ -41,7 +41,7 @@ public class Inheritance_Example extends Box{
             It is specially useful when both child and parent class have the same instance variable
             and we want to access the one belonging to the parent class. Using 'this' here, will get us the one present the in child class
 
-            If all the instance variables are unique in both parent and child class, it will refer to the parent property.
+            If all the instance variables are unique in both parent and child class, 'this.property' will refer to the parent property.
 
         */
 

@@ -3,14 +3,16 @@ package Code;
 public class Obj_Constructor {
     public static void main(String[] args) {
 
-        // We do not have any constructor defined in Car, therefore Java uses default constructor that allocates default values
+        // We do not have any constructor defined in Car, therefore Java uses default constructor that allocates default values.
+        // However, if at least one constructor is defined, we have to use that only.
+
         Car car_1= new Car();   
         // car_1.speed ;     // 0    (This default value is allocated by the default constructor)
         // car_1.model ;     // null (This default value is allocated by the default constructor)
 
 
-        // Calling the constructor present in Box class 
-        Box package_1= new Box();   
+        // Calling the defined constructor in Box class. Here, we can't call `new Box()`, as we need to use the defined ones only.
+        Box package_1= new Box(23);   
         // package_1.height;        //23 ( allocated by the constructor present in Box class)
 
 
@@ -51,20 +53,22 @@ class Box{
 
     // Creating the constructor for Box class
 
-    Box (){  // This a function, its name should match exactly to that of the corresponding class
+    Box (int height){  // This a function, its name should match exactly to that of the corresponding class
        
-        this.height=23;
+        this.height=height;
         this.color="red";
         this.weight= 15.5f;
+        // this.price=45;      // we can not create new fields inside constructor
+        
         /* 
             While creating an object, 'this' will be replaced by the particular reference variable associated with the object.
 
-            e.g., If we create this, Box container= new Box(); , then internally 'this' keyword will be replaced with 'container',
+            e.g., If we create this, Box container= new Box(23); , then internally 'this' keyword will be replaced with 'container',
 
                 container.height=23;
                 container.color="red";
         
-            Making creation of object less cumbersome
+            Making creation of object less cumbersome.	
         */
     }
 }

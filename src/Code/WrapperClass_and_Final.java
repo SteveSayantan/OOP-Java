@@ -8,7 +8,7 @@ public class WrapperClass_and_Final {
 
         Integer a=20;       // Now, this is no more a primitive, it is an object in heap.
         Integer b=45;
-        int c=56;
+        int c=56;           // primitive
 
         // Calling by reference as both are objects
         swap(a, b);     // But still they do not get swapped, as 'Integer' is 'final' class
@@ -42,7 +42,7 @@ public class WrapperClass_and_Final {
 }
 
 class Example{
-    final int num=45;   // we can declare 'final' property in a class, but it has to be initialized in the same line or through constructor
+    final int NUM=45;   // we can declare 'final' property in a class, but it has to be initialized in the same line or through constructor
     String name;
 
     Example(String name){

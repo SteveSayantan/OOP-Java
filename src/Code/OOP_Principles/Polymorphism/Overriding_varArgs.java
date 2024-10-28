@@ -12,7 +12,7 @@ public class Overriding_varArgs {
                 }
             }
 
-            class C{
+            class C extends P{
                 
                 // The following is overloading, not overriding
                 public void m1(int x){      // Had this been a varArg method, it would be overriding

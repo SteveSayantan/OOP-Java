@@ -16,8 +16,7 @@ public abstract class Abstract_Demo {
 
         An abstract method can never be 'private'.
         
-        An abstract method can be 'protected' . In that case, outside the current package, any class that inherits from the associated abstract class can't see that 'protected' method. Therefore,
-         any method of the child class trying to override it will be specific to the child class only, no override will take place.
+        An abstract method can be 'protected' as well. In that case, the child class inheriting from this abstract class has to override the abstract methods.
 
         Still we can't use multiple inheritance.
 

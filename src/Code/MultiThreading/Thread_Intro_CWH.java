@@ -2,9 +2,9 @@ package Code.MultiThreading;
 
 public class Thread_Intro_CWH {
     /* 
-        Learn the difference b/w concurrency and parallelism (Refer to https://medium.com/@itIsMadhavan/concurrency-vs-parallelism-a-brief-review-b337c8dac350)
+        Learn the difference b/w concurrency and parallelism (Refer to https://medium.com/@itIsMadhavan/concurrency-vs-parallelism-a-brief-review-b337c8dac350 and https://stackoverflow.com/questions/1050222/what-is-the-difference-between-concurrency-and-parallelism)
 
-        A system is said to be concurrent if it can support two or more actions in progress at the same time (by switching b/w tasks, but doing a single task at any instance) 
+        A system is said to be concurrent if it can support two or more actions in progress (may not be executed) at the same time (by switching b/w tasks, but doing a single task at any instance) 
 
         A system is said to be parallel if it can support two or more actions executing simultaneously (using multiple processors)
 

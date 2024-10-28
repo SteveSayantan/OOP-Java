@@ -1,5 +1,5 @@
 package Code;
-// Go through classes.md in Theory for more details
+// Go through classes.md in notes for more details
 
 import java.util.Arrays;
 

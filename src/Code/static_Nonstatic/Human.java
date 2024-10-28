@@ -60,7 +60,7 @@ public class Human {
     While calling the constructor in this case, 'this' is replaced by 'steve'.
 
         Therefore, 
-            steve.increment= steve.increment+1;    // 0 (as initially, 'increment' is present in the class, not in the object) + 1
+            steve.increment= steve.increment+1;    // 0 (the default value of int) + 1
             steve.increment= 1;
 
     However, the 'population' property present in the class (not in the object,as is a static property). That's why

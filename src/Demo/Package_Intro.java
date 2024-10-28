@@ -38,12 +38,13 @@ public class Package_Intro {
             |- com (folder)
                 |- steve (folder)
                     |- oop (folder)
-                        |- Test.java (source code)
-                        
+                        |- src (folder)
+                            |- Test.java (source code)
+                        |- bin (folder)
 
          Test.java
          ---------
-           package com.steve.oop;      
+           package com.steve.oop.bin;      // as we want to keep the generated .class file inside bin folder
 
            public class Test{
 
@@ -54,12 +55,13 @@ public class Package_Intro {
            }
 
         If we run `javac com/steve/oop/Test.java` (inside current_dir), the code will compile fine, but the generated .class file will be placed
-         inside current_dir.
+         inside the same folder containing the source code.
 
-                current_dir(pwd)
-                    |- Test.class
+                src
+                |- Test.java
+                |- Test.class
 
-        To place the .class file in the corresponding package structure, we need to run `javac -d . com/steve/oop/Test.java` (inside current_dir) .
+        To place the .class file in the corresponding package structure, we need to run `javac -d . com/steve/oop/src/Test.java` (inside current_dir) .
         
         Now, the generated .class file will be placed inside folder 'oop' . ` -d ` flag denotes destination to place generated .class files and `.` represents current_dir (pwd) . 
 
@@ -67,8 +69,10 @@ public class Package_Intro {
                     |- com (folder)
                         |- steve (folder)
                             |- oop (folder)
-                                |- Test.java (source code)
-                                |- Test.class (byte code)
+                                |- src (folder)
+                                    |- Test.java (source code)
+                                |- bin (folder)
+                                    |- Test.class (byte code)
 
         
         If the corresponding package structure not available, then this command will create corresponding package structure. 
@@ -76,13 +80,16 @@ public class Package_Intro {
         As destination, instead of `.` , we can provide any valid directory path. But the corresponding package structure will be created inside that directory
          if not available already. E.g., 
          
-           `javac -d F: com/steve/oop/Test.java` --> This command (executed inside current_dir) will create the package structure in F:, and place the .class file accordingly.
+           `javac -d F: com/steve/oop/src/Test.java` --> This command (executed inside current_dir) will create the package structure in F:, and place the .class file accordingly.
 
                 F:
                 |- com (folder)
                     |- steve (folder)
                         |- oop (folder)
-                            |- Test.class (byte code)
+                            |- src (folder)
+                                |- Test.java (source code)
+                            |- bin (folder)
+                                |- Test.class (byte code)
 
         If the specified directory (destination) is not already available itself, then we will get compile-time error.   
 
@@ -94,9 +101,12 @@ public class Package_Intro {
                 |- com (folder)
                     |- steve (folder)
                         |- oop (folder)
-                            |- Test.class (byte code)
+                            |- src (folder)
+                                |- Test.java (source code)
+                            |- bin (folder)
+                                |- Test.class (byte code)
         
-        We need to run the follwing command with fully qualified name -->  `java com.steve.oop.Test` (must be run inside current_dir itself) .
+        We need to run the follwing command with fully qualified name -->  `java com.steve.oop.bin.Test` (must be run inside current_dir itself) .
          This fully qualified name has to be used while importing this class in another file also.
         
         

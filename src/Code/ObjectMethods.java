@@ -37,7 +37,7 @@ public class ObjectMethods {
         System.out.println(temp.hashCode());    // 1995265320 for every object this value is unique
         System.out.println(temp.equals(temp2)); //true     since we are comparing the num property
 
-        System.out.println(temp instanceof ObjectMethods);  // true, It is used to check whether an object is the instance of a particular class
+        System.out.println(temp instanceof ObjectMethods);  // true, instanceof is used to check whether an object is the instance of a particular class or implements a particular interface
 
         System.out.println(temp2.getClass());   // class Code.ObjectMethods (this method returns a Class object which has a lot of methods)
         System.out.println(temp2.getClass().getSimpleName());   // ObjectMethods (exists in Class object returned by getClass() )
